@@ -1,0 +1,19 @@
+# Ignore development tools
+package.json
+package-lock.json
+bun.lockb
+wrangler.jsonc
+.gitignore
+.assetsignore
+_headers
+
+# Ignore standard directories
+node_modules/
+.git/
+.wrangler/
+.github/
+
+# Ignore local scratch or python files
+*.py
+*.txt
+*.md
