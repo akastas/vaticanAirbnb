@@ -661,12 +661,28 @@ img {
   flex-direction: column;
 }
 
-.spazi_img-wrap {
+.spazi_gallery-wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+  position: relative;
+  margin-bottom: 3.5rem; /* extra space for the shifted sub-image */
   width: 100%;
+}
+
+.spazi_img-main-wrap {
+  width: 65%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   position: relative;
-  margin-bottom: 2rem;
+}
+
+.spazi_img-sub-wrap {
+  width: 30%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1.5rem; /* staggered shift down */
 }
 
 .spazi_img {

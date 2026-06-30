@@ -348,15 +348,16 @@ function initAnimations() {
     // Fade reveal for spaces cards
     const spaceCards = document.querySelectorAll(".spazi_card");
     spaceCards.forEach(card => {
-      const img = card.querySelector(".spazi_img");
+      const images = card.querySelectorAll(".spazi_img");
       const textElements = card.querySelectorAll(".spazi_card-title, .spazi_card-desc, .spazi_card-meta");
       
-      gsap.fromTo(img, 
+      gsap.fromTo(images, 
         { scale: 1.15, clipPath: "inset(10% 0 10% 0)" },
         { 
           scale: 1, 
           clipPath: "inset(0% 0 0% 0)", 
           duration: 1.4, 
+          stagger: 0.2,
           ease: "power3.out",
           scrollTrigger: {
             trigger: card,
