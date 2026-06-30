@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Local Wrangler development files
+.wrangler/
+.devvars
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db

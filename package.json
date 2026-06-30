@@ -1,0 +1,22 @@
+{
+  "name": "vatican-airbnb",
+  "version": "1.0.0",
+  "description": "Luxury web design for Maison Angelico Airbnb listing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy ."
+  },
+  "keywords": [
+    "airbnb",
+    "cloudflare-pages",
+    "luxury",
+    "roma",
+    "vatican"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.62.0"
+  }
+}
