@@ -308,34 +308,9 @@ function initAnimations() {
     ease: "power4.inOut"
   }, "-=0.3");
 
-  // 2. HERO ANIMATION
+  // 2. HERO ANIMATION - Simplified to prevent delayed animation per user request
   function triggerHeroAnimation() {
-    const tlHero = gsap.timeline();
-
-    tlHero.fromTo(".nav_fixed", 
-      { y: -30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.0, ease: "power3.out" }
-    )
-    .fromTo(".hero_subtitle",
-      { y: 20, opacity: 0 },
-      { y: 0, opacity: 0.8, duration: 0.8, ease: "power3.out" },
-      "-=0.6"
-    )
-    .fromTo(".hero_heading",
-      { y: 60, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.2, ease: "power4.out" },
-      "-=0.7"
-    )
-    .fromTo(".hero_description",
-      { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.0, ease: "power3.out" },
-      "-=0.8"
-    )
-    .fromTo(".hero_btn-wrap",
-      { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.0, ease: "power3.out" },
-      "-=0.8"
-    );
+    // Elements remain static and instantly readable as the loader exits
   }
 
   // 3. SCROLL-TRIGGERED PARALLAX AND REVEALS

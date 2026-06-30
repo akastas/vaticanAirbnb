@@ -641,49 +641,18 @@ img {
   background-color: var(--bg-cream-dark);
 }
 
-.spazi_layout {
+.spazi_grid {
   display: grid;
-  grid-template-columns: 3.5fr 4.5fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+  margin-top: 2rem;
+  width: 100%;
 }
 
-@media (max-width: 991px) {
-  .spazi_layout {
+@media (max-width: 767px) {
+  .spazi_grid {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-}
-
-.spazi_info {
-  position: sticky;
-  top: 150px;
-  height: fit-content;
-}
-
-@media (max-width: 991px) {
-  .spazi_info {
-    position: relative;
-    top: 0;
-  }
-}
-
-.spazi_info-text {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  max-width: 420px;
-  margin-top: 2rem;
-  color: var(--text-green-light);
-}
-
-.spazi_list {
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;
-}
-
-@media (max-width: 991px) {
-  .spazi_list {
-    gap: 4rem;
   }
 }
 
@@ -734,22 +703,6 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   opacity: 0.6;
-}
-
-/* Stagger column items in spaces list */
-.spazi_list > .spazi_card:nth-child(even) {
-  align-self: flex-end;
-  width: 90%;
-}
-.spazi_list > .spazi_card:nth-child(odd) {
-  width: 90%;
-}
-
-@media (max-width: 991px) {
-  .spazi_list > .spazi_card:nth-child(even),
-  .spazi_list > .spazi_card:nth-child(odd) {
-    width: 100%;
-  }
 }
 
 /* --- Banner Quote Parallax Section --- */
